@@ -1,13 +1,15 @@
-import { Button } from 'components'
+import React, { Component } from "react"
+import { Auth } from "pages"
 
-function App() {
-  return (
-    <div className="App">
-      <h1> hello word</h1>
-      <Button className="button__large" type="primary" size="large">This is Button</Button>
+class App extends Component {
+  render() {
+    return (
+      <div className="wrapper">
 
-    </div>
-  );
+        <Auth />
+
+      </div>
+    );
+  }
 }
-
 export default App;
